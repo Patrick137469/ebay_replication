@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+\title{Replication of eBay Paid Search Experiment}
+\author{Patrick Michael}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+This paper replicates key findings from the eBay paid search experiment. 
+The goal is to examine the causal impact of paid search advertising on firm revenue. 
+Using experimental data, we compare treated and untreated groups over time and estimate the difference-in-differences effect of advertising.
+
+\section{Experimental Design}
+
+The experiment randomly assigned users to treatment and control groups. 
+The treatment group was exposed to paid search advertising while the control group was not. 
+Revenue outcomes were then observed over multiple time periods.
+
+Because assignment was randomized, the treatment effect can be estimated using a difference-in-differences framework comparing the average revenue across groups and time.
+
+\section{Revenue Trends}
+
+Figure \ref{fig:revtime} shows the average revenue for treated and untreated groups over time.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{../output/figures/figure_5_2.png}
+\caption{Average Revenue by Group Over Time}
+\label{fig:revtime}
+\end{figure}
+
+Figure \ref{fig:loggap} shows the difference in log revenue between the treated and untreated groups.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{../output/figures/figure_5_3.png}
+\caption{Difference in Log Revenue Between Treated and Control}
+\label{fig:loggap}
+\end{figure}
+
+The figures suggest that the treated group experiences higher revenue during the experimental period.
+
+\section{Difference-in-Differences Results}
+
+Table \ref{tab:did} presents the estimated difference-in-differences effect of paid search advertising.
+
+\input{../output/tables/did_table.tex}
+
+The estimate represents the causal impact of advertising on revenue. 
+A positive estimate would suggest that paid search advertising increases firm revenue.
+
+\section{Conclusion}
+
+This replication exercise demonstrates how experimental data can be used to estimate causal effects. 
+The results illustrate the value of randomized experiments in measuring the effectiveness of advertising campaigns.
+
+\end{document}
