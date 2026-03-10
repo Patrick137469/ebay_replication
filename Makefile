@@ -31,3 +31,10 @@ clean:
 # 3. If you edit paper/paper.tex, which targets will Make rebuild? Which targets will it skip?
 # Rebuild: paper/paper.pdf
 # Skip: output/figures/figure_5_2.png, output/figures/figure_5_3.png, output/tables/did_table.tex
+
+
+# Reflection:
+# Using Make improved the workflow because it rebuilt only the files affected by a change
+# instead of rerunning the entire project every time. This saved time and made the
+# dependency structure of the project much clearer. It also made the workflow more
+# organized, efficient, and reproducible than using one run_all.sh script for everything.
